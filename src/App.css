@@ -1,0 +1,116 @@
+/* General styles for the black theme */
+body {
+  background-color: #121212;
+  color: #ffffff;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: -1%;
+  width: 100%;
+  background-color: #121212;
+  z-index: 999; 
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+nav ul li button {
+  background-color: #f05454;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+nav ul li a:hover, nav ul li button:hover {
+  color: #f05454;
+}
+
+/* Center the login form */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #121212;
+}
+
+form {
+  background-color: #1f1f1f;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+  width: 400px;
+  text-align: center;
+}
+
+form div {
+  margin-bottom: 25px;
+}
+
+label {
+  font-size: 16px;
+  color: #ccc;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+  border: 1px solid #333;
+  border-radius: 4px;
+  background-color: #333;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+input::placeholder {
+  color: #bbb;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #f05454;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+button:hover {
+  background-color: #f36b6b;
+}
+
+/* Adjust the body for fixed navbar */
+body::before {
+  content: "";
+  display: block;
+  height: 60px; /* Adjust this height according to your nav height */
+}
